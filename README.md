@@ -1,32 +1,10 @@
-# Générateur de certificat de déplacement
+# Coucou :wave: 
 
-## Développer
+Marrant que l'intérieur ait oublié de nous donner la main sur deux des valeurs stockées dans le QRcode : la date & l'heure de génération.
+Heureusement ils n'ont rien inventé et ont just copié un projet opensource pour faire leur site, donc on peut faire pareil et se donner la main sur ses valeurs.
 
-### Installer le projet
+Qu'est-ce qui change : 
+- Pour optimiser l'usage rapide sur un mobile au dernier moments, la plus part des valeurs sont stockées sur votre appareil afin de pas avoir besoin de tout retaper dans le rush
+- Les heures de sortie & de génération de documents ont des valeurs par défaut somewhat random, somewhat cohérentes. Mais ça peut faire sens de vouloir le changer.
 
-```console
-$ git clone https://github.com/lab-mi/deplacement-covid-19.git
-$ cd deplacement-covid-19
-$ npm i
-$ npm start
-```
-
-### Générer le code de production
-
-```console
-$ npm run build
-```
-
-Le code à déployer sera dans le dossier `dist`
-
-## Crédits
-
-Ce projet a été réalisé à partir d'un fork du dépôt [covid-19-certificate](https://github.com/nesk/covid-19-certificate) de [Johann Pardanaud](https://github.com/nesk).
-
-Les projets open source suivants ont été utilisés pour le développement de ce 
-service :
-
-- [PDF-LIB](https://pdf-lib.js.org/)
-- [qrcode](https://github.com/soldair/node-qrcode)
-- [Bootstrap](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/license)
+À utiliser à vos risques et périls 😘
