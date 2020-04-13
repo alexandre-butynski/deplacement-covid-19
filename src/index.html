@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>COVID-19 – Générateur d'attestation de déplacement dérogatoire</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>🏴‍☠️ COVID-19 – Générateur d'attestation de déplacement dérogatoire</title>
 </head>
 <body>
     <main role="main">
@@ -199,10 +200,26 @@
                     <span class="validity" aria-hidden="true"></span>
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="field-dategeneration">Date de génération du document</label>
+                <div class="input-group  align-items-center">
+                    <input type="date" class="form-control" id="field-dategeneration" name="dategeneration" autocomplete="off" placeholder="JJ/MM/YYYY" aria-invalid="true" required>
+                    <span class="validity" aria-hidden="true"></span>
+                </div>
+            </div>
             
+            <div class="form-group">
+                <label for="field-heuregeneration">Heure de génération du document</label>
+                <div class="input-group  align-items-center">
+                    <input type="time" class="form-control" id="field-heuregeneration" name="heure" autocomplete="off" aria-invalid="true" required>
+                    <span class="validity" aria-hidden="true"></span>
+                </div>
+            </div>
             
             <p class="text-center mt-5">
                 <button type="button" id="generate-btn" class="btn btn-primary btn-attestation"><span ><i class="fa fa-file-pdf inline-block mr-1"></i>  Générer mon attestation</span></button>
+                <button type="button" id="btn-delete-localstorage" class="btn btn-warning btn-delete-localstorage"><span >🚮stockage local </span></button>
             </p>
 
             <div class="bg-primary  d-none" id="snackbar">
