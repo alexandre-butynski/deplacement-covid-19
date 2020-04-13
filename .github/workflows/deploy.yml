@@ -10,17 +10,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Change directory
-      run: cd ./page
-
     - name: Build
       run: |
         npm install
         npm run build
+      working-directory: ./page
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: page/dist

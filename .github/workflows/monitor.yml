@@ -1,21 +1,19 @@
 name: Monitor official website
-on:
+on: 
   schedule:
-    - cron: '*/30 * * * *'
+   - cron: "*/5 * * * *"
 
 jobs:
-  build-and-deploy:
+  monitor-official-website:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Change directory
-      run: cd ./monitor
-
     - name: Install dependencies
-      run: |
-        npm install
+      run: npm install
+      working-directory: ./monitor
 
     - name: Execute monitor:check
       run: npm run monitor:check
+      working-directory: ./monitor
