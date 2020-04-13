@@ -10,7 +10,6 @@ import {
   faFilePdf,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./check-updates";
 import { $, $$ } from "./dom-utils";
 import pdfBase from "./certificate.pdf";
 
