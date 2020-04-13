@@ -8,6 +8,7 @@ const main = async ({ update } = { update: false }) => {
     "https://media.interieur.gouv.fr/deplacement-covid-19/"
   ).then((res) => res.text());
   const digest = crypto.createHash("md5").update(html).digest("hex");
+  console.log(html);
   if (update) {
     fs.writeFileSync(".stored_digest", digest);
   } else {
