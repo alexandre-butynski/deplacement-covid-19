@@ -319,8 +319,3 @@ Object.keys(conditions).forEach(field => {
     }
   })
 })
-
-function addVersion () {
-  document.getElementById('version').innerHTML = `${new Date().getFullYear()} - ${process.env.VERSION}`
-}
-addVersion()

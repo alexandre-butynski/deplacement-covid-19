@@ -267,53 +267,6 @@ input:valid+span:after {
 .stores-link:hover {
     text-decoration: underline;
 }
-
-.confidentialite {
-  .cookies {
-    border-collapse: collapse;
-
-    td,
-    th {
-      border: 1px solid #000191;
-      padding: 8px;
-    }
-
-    .header-row {
-      font-weight: bold;
-      color: #ffffff;
-      background-color: #000191;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    .name-col {
-      font-weight: bold;
-      padding: 8px 16px;
-      color: #000191;
-    }
-  }
-
-
-  .btn-wrapper {
-    display: flex;
-    justify-content: center;
-
-    .btn-generateur {
-      padding: 0.8em;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #ffffff;
-      background-color: #000191;
-      border-radius: 0.5em;
-      text-decoration: none;
-      color: #ffffff;
-    }
-  
-  }
-  em {
-    font-size: .8rem;
-  }
-}
   
 .titre-2 {
   text-align: left;

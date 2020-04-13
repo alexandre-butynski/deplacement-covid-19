@@ -8,7 +8,7 @@
     "start": "cross-env VERSION=${VERSION:-localversion} parcel --public-url ${PUBLIC_URL:-/deplacement-covid-19} ./src/index.html",
     "clean:dist": "rimraf dist",
     "prebuild": "run-s lint clean:dist",
-    "build": "parcel build --public-url ${PUBLIC_URL:-/deplacement-covid-19} ./src/index.html ./src/robots.txt ./src/sitemap.xml",
+    "build": "parcel build --public-url ${PUBLIC_URL:-/deplacement-covid-19} ./src/index.html",
     "postbuild": "PUBLIC_URL=${PUBLIC_URL:-/deplacement-covid-19} react-snap",
     "preserve": "npm run build",
     "serve": "serve dist",
