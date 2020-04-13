@@ -10,6 +10,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
+    - name: Change directory
+      run: cd ./page
+
     - name: Build
       run: |
         npm install
