@@ -393,7 +393,6 @@ const inputFields = {
 
 Object.keys(inputFields).forEach((field) => {
   // restore fields from localstorage
-  console.log(field)
   $(field).value =
     (field.indexOf('date') + field.indexOf('heure') === -2
       ? localStorage.getItem(field.substring('#field-'.length))
@@ -417,6 +416,3 @@ Object.keys(inputFields).forEach((field) => {
     }
   })
 })
-
-window.stringified = stringified
-window.pad = pad
