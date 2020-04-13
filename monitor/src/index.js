@@ -4,9 +4,11 @@ const fs = require("fs");
 const process = require("process");
 
 const main = async ({ update } = { update: false }) => {
-  const html = await fetch(
-    "https://media.interieur.gouv.fr/deplacement-covid-19/"
-  ).then((res) => res.text());
+  const html = (
+    await fetch(
+      "https://media.interieur.gouv.fr/deplacement-covid-19/"
+    ).then((res) => res.text())
+  ).replace(/\"\/_Incapsula_Resource.*\"/g, "");
   const digest = crypto.createHash("md5").update(html).digest("hex");
   console.log(html);
   if (update) {
