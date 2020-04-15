@@ -193,6 +193,7 @@ button{
 .btn-delete-localstorage {
   padding: 0.9em;
   font-size: .7em;
+  font-weight: 500;
   color: #ffffff;
   background-color: #e89805;
   border-radius: 0.5em;
