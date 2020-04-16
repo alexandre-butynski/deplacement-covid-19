@@ -19,6 +19,7 @@ label {
 
 .container{
   margin-top: 25px;
+  max-width: 600px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
