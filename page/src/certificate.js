@@ -277,19 +277,6 @@ $('#generate-btn').addEventListener('click', async (event) => {
   }, 6000)
 })
 
-$$('input').forEach((input) => {
-  const exempleElt = input.parentNode.parentNode.querySelector('.exemple')
-  if (input.placeholder && exempleElt) {
-    input.addEventListener('input', (event) => {
-      if (input.value) {
-        exempleElt.innerHTML = 'ex.&nbsp;: ' + input.placeholder
-      } else {
-        exempleElt.innerHTML = ''
-      }
-    })
-  }
-})
-
 const stringified = (date) => ({
   year: date.getFullYear(),
   month:
